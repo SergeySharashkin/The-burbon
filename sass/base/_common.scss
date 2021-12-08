@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-
   }
   *,
   *::before,
@@ -38,4 +37,8 @@ html {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+  }
+  .ul, .ol {
+    list-style: none;
+    padding: 0;
   }

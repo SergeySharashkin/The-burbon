@@ -44,6 +44,11 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.ul, .ol {
+  list-style: none;
+  padding: 0;
+}
+
 .page-header__container, .hero__container, .features__container, .team__container, .client__container, .footer-container, .choice {
   padding-left: 15px;
   padding-right: 15px;
