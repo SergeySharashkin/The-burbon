@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Prequel Demo';
+    src: url('PrequelDemo-Regular.eot');
+    src: local('PrequelDemo-Regular'),
+        url('PrequelDemo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PrequelDemo-Regular.woff2') format('woff2'),
+        url('PrequelDemo-Regular.woff') format('woff'),
+        url('PrequelDemo-Regular.ttf') format('truetype'),
+        url('PrequelDemo-Regular.svg#PrequelDemo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slick';
+    src: url('Slick-Slant.eot');
+    src: local('Slick Slant'), local('Slick-Slant'),
+        url('Slick-Slant.eot?#iefix') format('embedded-opentype'),
+        url('Slick-Slant.woff2') format('woff2'),
+        url('Slick-Slant.woff') format('woff'),
+        url('Slick-Slant.ttf') format('truetype'),
+        url('Slick-Slant.svg#Slick-Slant') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+    

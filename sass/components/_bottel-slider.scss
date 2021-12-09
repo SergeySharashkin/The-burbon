@@ -1,0 +1,57 @@
+.bottel-slider {
+    @extend %auto-margin;
+}
+.bottel-contain {
+    @extend %auto-margin;
+    
+    
+}
+.slider-body {
+    max-width: 1220px;
+    @extend %auto-margin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-btn {
+    font-size: 100%;
+    font-family: "slick";
+    font-size: 90px;
+   opacity: 0.75;
+   -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 36px;
+    width: 30px;
+    height: 60px;
+    
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #545454;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 100;
+}
+.bottel-list {
+    @extend %auto-margin;
+    display: flex;
+    
+    overflow: hidden;
+}
+.bottel-item {
+    flex: 0 0 20%;
+    max-width: 20%;
+    width: 238px;
+height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // color: rgba(255,255,255, 0.8);
+    font-size: 26px;
+// top: 0;
+// left: 0;
+
+}
