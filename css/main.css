@@ -56,9 +56,15 @@ a {
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.story, .story__contain, .rye, .rye-contain, .bottel-slider, .bottel-contain, .slider-body, .bottel-list {
+.story, .story__contain, .section, .rye-contain, .bottel-slider, .bottel-contain, .slider-body, .bottel-list, .addingsec-contain, .scotch-contain, .contacts-banner, .rum-contain, .other_container, .form-section__contain {
   margin-right: auto;
   margin-left: auto;
+}
+
+.addingsec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header-hero {
@@ -432,17 +438,18 @@ a {
   margin: 10px 0 20px 0;
 }
 
-.rye-tittel {
-  text-transform: uppercase;
-  font-family: "Prequel Demo", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 60px;
-  text-align: center;
+.section__tittel-contain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
-.rye-tittel::before {
+.section__tittel-contain::before {
   position: absolute;
   width: 100%;
   height: 5px;
@@ -453,8 +460,21 @@ a {
   background: url("../images/border-black.jpg") 0 0 repeat-x;
 }
 
+.section__tittel {
+  text-transform: uppercase;
+  font-family: "Prequel Demo", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 22px;
+}
+
 .rye-lists-contain {
   font-size: 22px;
+  line-height: 1.5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,8 +489,18 @@ a {
   width: calc((100%-5 * 10px) / 5);
 }
 
+.bottel-slider {
+  padding: 70px;
+}
+
+.bottel-contain {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
 .slider-body {
   max-width: 1220px;
+  padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,23 +517,22 @@ a {
 }
 
 .slider-btn {
-  font-size: 100%;
-  font-family: "slick";
-  font-size: 90px;
-  opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 36px;
-  width: 30px;
-  height: 60px;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  padding: 10px 5px;
+  min-width: 30px;
+  min-height: 60px;
   cursor: pointer;
-  color: #545454;
   border: none;
   outline: none;
   background: transparent;
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-btn.btn-next {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .bottel-list {
@@ -511,6 +540,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  padding: 65px 0;
 }
 
 .bottel-item {
@@ -534,5 +564,193 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 26px;
+  font-weight: 500;
+}
+
+.addingsec-contain {
+  max-width: 1350px;
+  padding: 0 15px;
+}
+
+.addingsec-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -15px;
+}
+
+.addingsec-item {
+  width: calc((100%-60)/2);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px;
+}
+
+.addingsec-item > img {
+  width: 100%;
+  height: auto;
+}
+
+.scotch {
+  padding: 50px 0 30px;
+}
+
+.scotch-contain {
+  max-width: 1350px;
+}
+
+.scotch-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -10px;
+  padding-top: 120px;
+}
+
+.scotch-item {
+  width: calc((100% - 5 * 20px)/5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.scotch-item > p {
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.contacts-banner {
+  max-width: 1320px;
+  background-image: url("https://bourbonscotchbuyer.com/wp-content/uploads/2019/03/addingpicture.jpg");
+  padding: 50px 0 50px 60px;
+}
+
+.banner-text {
+  max-width: 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #dfbe65;
+  font-weight: 700;
+  text-align: center;
+}
+
+.banner-tittel {
+  font-size: 44px;
+  line-height: 0.93;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.banner-link {
+  line-height: 1.03;
+  font-size: 58px;
+  color: #ffffff;
+}
+
+.banner-link.banner-mail {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.rum {
+  padding: 50px 0 30px;
+}
+
+.rum-contain {
+  max-width: 1350px;
+}
+
+.rum-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+  padding-top: 120px;
+}
+
+.rum-item {
+  width: calc((100% - 4 * 30px)/4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+}
+
+.rum-item > p {
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.other_container {
+  padding: 50px 0 30px;
+  max-width: 1600px;
+}
+
+.other-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  vertical-align: top;
+  font-size: 30px;
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+.other-item {
+  font-size: 30px;
+}
+
+.form-section {
+  background-image: url("../image/footerbg(1).jpg");
+}
+
+.form-section__contain {
+  max-width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

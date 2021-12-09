@@ -1,0 +1,33 @@
+
+.contacts-banner{
+@extend %auto-margin;
+max-width: 1320px;
+background-image: url('https://bourbonscotchbuyer.com/wp-content/uploads/2019/03/addingpicture.jpg');
+padding: 50px 0 50px 60px;
+}
+.banner-text {
+    max-width: 525px;
+    display: flex;
+    flex-direction: column;
+    color: #dfbe65;
+font-weight: 700;
+text-align: center;
+}
+.banner-tittel {
+font-size: 44px;
+line-height: 0.93;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+.banner-link {
+    line-height: 1.03;
+    font-size: 58px;
+    color: $hero-text-color;
+    &.banner-mail {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+}
+ 

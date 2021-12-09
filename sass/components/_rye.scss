@@ -1,4 +1,4 @@
-.rye {
+.section {
   @extend %auto-margin;
 }
 .rye-contain {
@@ -12,18 +12,11 @@
     margin: 10px 0 20px 0;
   }
 }
-
-.rye-tittel {
-  text-transform: uppercase;
-  font-family: $tre-font;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 60px;
-  text-align: center;
+.section__tittel-contain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
-
-  // padding: 0 22px;
-
   &::before {
     position: absolute;
     width: 100%;
@@ -36,8 +29,22 @@
     background: url("../images/border-black.jpg") 0 0 repeat-x;
   }
 }
+.section__tittel {
+  text-transform: uppercase;
+  font-family: $tre-font;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 22px;
+
+  
+}
 .rye-lists-contain {
   font-size: 22px;
+  line-height: 1.5;
   display: flex;
   justify-content: space-between;
   margin: -10px;

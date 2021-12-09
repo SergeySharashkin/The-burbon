@@ -1,0 +1,23 @@
+
+.addingsec-contain {
+    @extend %auto-margin;
+   
+max-width: 1350px;
+padding: 0 15px;
+}
+.addingsec-list {
+    @extend %list;
+    display: flex;
+    margin: -15px;
+    
+}
+.addingsec-item {
+    width: calc((100%-60)/2);
+    height: auto;
+    display: flex;
+    margin: 15px;
+    &>img {
+        width: 100%;
+        height: auto;
+    }
+}

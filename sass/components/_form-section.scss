@@ -1,0 +1,13 @@
+.form-section {
+background-image: url("../image/footerbg(1).jpg");
+// width: 100%
+}
+.form-section__contain {
+    @extend %auto-margin;
+max-width: 750px;
+display: flex;
+flex-direction: column;
+}
+.section__tittel--form-section {
+    
+}

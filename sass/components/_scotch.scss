@@ -1,0 +1,28 @@
+.scotch {
+    padding: 50px 0 30px;
+}
+.scotch-contain {
+    @extend %auto-margin;
+    max-width: 1350px;
+}
+
+.scotch-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    padding-top: 120px;
+    
+}
+.scotch-item {
+    width: calc((100% - 5 * 20px)/5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    &>p {
+        font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    }
+}
