@@ -1,0 +1,40 @@
+.story {
+    @extend %auto-margin;
+    // $tre-font
+}
+.story__contain {
+  @extend %auto-margin;
+  text-align: center;
+  // width: 100%;
+  padding: 100px 15px 50px 15px;
+  max-width: 1600px;
+}
+ 
+
+.story__tittel {
+text-transform: uppercase;
+font-family: $tre-font;
+font-size: 60px;
+position: relative;
+padding-bottom: 100px;
+&::after {
+      position: absolute;
+      // border:1px solid black;
+    width: 560px;
+    height: 85px;
+    left: 50%;
+    top: 90px;
+    content: "";
+    background: url("../images/lorn.png") 0 0 no-repeat;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} }
+.story__description {
+  line-height: 32px;
+  
+  margin-bottom: 20px;
+  font-size: 22px;
+  &:last-child {
+    margin: 0;
+  }
+}
