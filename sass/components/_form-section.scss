@@ -1,6 +1,7 @@
 .form-section {
-background-image: url("../image/footerbg(1).jpg");
+background-image: url("../image/footerbg.jpg");
 // width: 100%
+// background-color: black
 }
 .form-section__contain {
     @extend %auto-margin;
@@ -9,5 +10,5 @@ display: flex;
 flex-direction: column;
 }
 .section__tittel--form-section {
-    
+    color: white;
 }

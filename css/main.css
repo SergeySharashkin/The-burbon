@@ -740,7 +740,7 @@ a {
 }
 
 .form-section {
-  background-image: url("../image/footerbg(1).jpg");
+  background-image: url("../image/footerbg.jpg");
 }
 
 .form-section__contain {
@@ -752,5 +752,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.section__tittel--form-section {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
