@@ -8,6 +8,14 @@
   // width: 100%;
   padding: 100px 15px 50px 15px;
   max-width: 1600px;
+  @media screen and (max-width: 1599px) {
+    // margin-top: 10px;
+    max-width: 1140px;
+  }
+  @media screen and (max-width: 1090px) {
+    // margin-top: 10px;
+    max-width: 960px;
+  }
 }
  
 

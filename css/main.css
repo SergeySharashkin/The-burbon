@@ -68,7 +68,7 @@ a {
 }
 
 .header-hero {
-  background-image: url("https://bourbonscotchbuyer.com/wp-content/uploads/2019/08/banner-new-2.jpg");
+  background-image: url("../images/banner-new-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,9 +85,22 @@ a {
   background: url("../images/banner-repate.png") 0 0 repeat-x;
 }
 
+@media screen and (max-width: 1090px) {
+  .header-hero {
+    background: none;
+    background-color: #000000;
+  }
+}
+
 .header-contain {
   background-image: -webkit-gradient(linear, left top, right top, from(#00000080), to(#00000080));
   background-image: linear-gradient(to right, #00000080, #00000080);
+}
+
+@media screen and (max-width: 1190px) {
+  .header-contain {
+    background-color: transparent;
+  }
 }
 
 .page-header {
@@ -105,6 +118,28 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 1090px) {
+  .page-header {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 190px 0 23px;
+  }
+}
+
 .contacts-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,14 +148,31 @@ a {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
+  -webkit-transition: font-size 500ms linear;
+  transition: font-size 500ms linear;
 }
 
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1190px) {
   .contacts-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .contacts-list {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -128,7 +180,7 @@ a {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1190px) {
   .contacts-item:not(:first-child) {
     margin: 0;
   }
@@ -138,25 +190,81 @@ a {
   color: #a69c8d;
   font-size: 24px;
   font-weight: 400;
+  -webkit-transition: font-size 500ms linear;
+  transition: font-size 500ms linear;
+}
+
+@media screen and (max-width: 1090px) {
+  .contacts-item > a {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-item > a {
+    font-size: 20px;
+  }
 }
 
 .header-img-contain {
-  min-width: 228px;
-}
-
-.header-img-link {
+  display: inline-block;
   position: absolute;
   left: calc((100% - 228px)/2);
   top: 15px;
+  min-width: 228px;
+}
+
+@media screen and (max-width: 1090px) {
+  .header-img-contain {
+    min-width: 152px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-img-contain {
+    min-width: 228px;
+    position: absolute;
+    left: calc((100% - 228px)/2);
+    top: 15px;
+  }
 }
 
 .header-img {
   width: 228px;
-  top: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1090px) {
+  .header-img {
+    width: 152px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-img {
+    width: 228px;
+  }
 }
 
 .main-nav {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1190px) {
+  .main-nav {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    padding-top: 0px;
+  }
 }
 
 .main-nav__link {
@@ -166,10 +274,25 @@ a {
   color: #a69c8d;
   font-size: 24px;
   font-weight: 600;
+  -webkit-transition: font-size 500ms linear;
+  transition: font-size 500ms linear;
 }
 
 .main-nav__link:first-child {
   margin: 0;
+}
+
+@media screen and (max-width: 1190px) {
+  .main-nav__link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav__link {
+    font-size: 18px;
+    margin: 0 0 0 26px;
+  }
 }
 
 .hero {
@@ -181,7 +304,36 @@ a {
           justify-content: space-between;
   margin: 0 auto;
   max-width: 1600px;
-  padding: 0 15px 65px 15px;
+  padding: 0 45px 65px 45px;
+}
+
+@media screen and (max-width: 1090px) {
+  .hero {
+    background-image: url("../images/banner-new-2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 65px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url("../images/banner-new-2-1024x400.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding-top: 384px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 767px;
+  }
 }
 
 .hero__mane {
@@ -192,8 +344,20 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 190px;
+  margin-top: 125px;
   max-width: 515px;
+}
+
+@media screen and (min-width: 1091px) and (max-width: 1599px) {
+  .hero__mane {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__mane {
+    display: none;
+  }
 }
 
 .hero__mane > p {
@@ -231,9 +395,28 @@ a {
           align-items: center;
 }
 
+@media screen and (min-width: 1091px) and (max-width: 1599px) {
+  .form-contain {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .form-contain {
+    padding-top: 384px;
+  }
+}
+
 .form-contain > img {
   margin-bottom: 25px;
   width: 325px;
+}
+
+@media screen and (max-width: 1190px) {
+  .form-contain {
+    padding: 40px 15px 50px;
+    margin-top: 0;
+  }
 }
 
 .form {
@@ -357,6 +540,12 @@ a {
   color: #000000;
 }
 
+@media screen and (max-width: 1599px) {
+  .form-message {
+    height: 75px;
+  }
+}
+
 .form-download {
   opacity: 0;
   visibility: hidden;
@@ -429,6 +618,18 @@ a {
   max-width: 1600px;
 }
 
+@media screen and (max-width: 1599px) {
+  .story__contain {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .story__contain {
+    max-width: 960px;
+  }
+}
+
 .story__tittel {
   text-transform: uppercase;
   font-family: "Prequel Demo", sans-serif;
@@ -461,17 +662,25 @@ a {
   margin: 0;
 }
 
-.section {
-  padding: 0 15px;
-}
-
 .rye-contain {
-  max-width: 1320px;
+  max-width: 1350px;
   padding: 0 15px;
 }
 
 .rye-contain > img {
   margin: 10px 0 20px 0;
+}
+
+@media screen and (max-width: 1090px) {
+  .rye-contain {
+    max-width: 1090px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rye-contain {
+    max-width: 767px;
+  }
 }
 
 .section__tittel-contain {
@@ -640,6 +849,13 @@ a {
   max-width: 1350px;
 }
 
+@media screen and (max-width: 1599px) {
+  .scotch-contain {
+    margin-top: 10px;
+    max-width: 1140px;
+  }
+}
+
 .scotch-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,7 +891,7 @@ a {
 }
 
 .contacts-banner {
-  max-width: 1350px;
+  max-width: 1320px;
   background-image: url("https://bourbonscotchbuyer.com/wp-content/uploads/2019/03/addingpicture.jpg");
 }
 
@@ -724,6 +940,12 @@ a {
   max-width: 1350px;
 }
 
+@media screen and (max-width: 1599px) {
+  .rum-contain {
+    max-width: 1140px;
+  }
+}
+
 .rum-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,6 +983,12 @@ a {
 .other_container {
   padding: 50px 0 30px;
   max-width: 1600px;
+}
+
+@media screen and (max-width: 1599px) {
+  .other_container {
+    max-width: 1140px;
+  }
 }
 
 .other-list {
@@ -852,7 +1080,7 @@ a {
 
 .footer-section {
   background-color: #877761;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .footer-contain {

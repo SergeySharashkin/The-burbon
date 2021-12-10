@@ -1,6 +1,6 @@
 .header-hero {
   @extend %auto-margin;
-  background-image: url("https://bourbonscotchbuyer.com/wp-content/uploads/2019/08/banner-new-2.jpg");
+  background-image: url("../images/banner-new-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,6 +17,10 @@
     background: url("../images/banner-repate.png") 0 0 repeat-x;
     // z-index: 9;
 }
+@media screen and (max-width:1090px) {
+  background: none;
+  background-color: #000000;
+}
 }
 .header-contain {
   @extend %auto-margin;
@@ -25,6 +29,10 @@
     #00000080,
     #00000080
   );
+  @media screen and (max-width:1190px) {
+    background-color: transparent;
+  
+  }
 }
 .page-header {
   @extend %auto-margin;
@@ -34,6 +42,15 @@
   align-items: flex-start;
   max-width: 1600px;
   position: relative;
+  @media screen and (max-width:1090px) {
+    padding: 15px;
+  }
+  @media screen and (max-width:767px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 190px 0 23px;
+  }
   
 }
 .contacts-list {
@@ -43,14 +60,24 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
-  @media screen and (max-width:1184px) {
+  transition: font-size 500ms linear;
+  @media screen and (max-width:1190px) {
     flex-direction: column;
+    font-size: 20px;
+  }
+  @media screen and (max-width:1090px) {
+    font-size: 19px;
+  }
+  @media screen and (max-width:767px) {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 .contacts-item {
   &:not(:first-child) {
     margin-left: 10px;
-    @media screen and (max-width:1184px) {
+    @media screen and (max-width:1190px) {
       margin: 0;
     }}
     
@@ -58,27 +85,71 @@
     color: $second-text-color;
     font-size: 24px;
     font-weight: 400;
+    transition: font-size 500ms linear;
+    @media screen and (max-width:1090px) {
+      font-size: 19px;
+    }
+    @media screen and (max-width:767px) {
+      font-size: 20px;
+    }
   }
 }
 .header-img-contain {
-  // display:flex;
-  min-width: 228px;
-  // position: relative;
-}
-.header-img-link {
+  display:inline-block;
   position: absolute;
-  
   left: calc((100% - 228px)/2);
   top: 15px;
-  // background: none;
+  min-width: 228px;
+  @media screen and (max-width:1090px) {
+    min-width: 152px;
+    position: relative;
+    left: 0;
+  top: 0;
+  }
+  @media screen and (max-width:767px) {
+    min-width: 228px;
+    position: absolute;
+    left: calc((100% - 228px)/2);
+    top: 15px;
+  }
+  
 }
+// .header-img-link {
+//   position: absolute;
+//   left: calc((100% - 228px)/2);
+//   top: 15px;
+//   @media screen and (max-width:1190px) {
+//     position: relative;
+//     left: 0;
+//   top: 0;
+//   }
+//   @media screen and (max-width:767px) {
+//     position: absolute;
+//     left: calc((100% - 228px)/2);
+//     top: 15px;
+//   }
+  
+// }
 .header-img {
   width: 228px;
-  // position:absolute;
-  top:0
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  @media screen and (max-width:1090px) {
+    width: 152px;
+  }
+  @media screen and (max-width:767px) {
+    width: 228px;
+  }
 }
 .main-nav {
     text-transform: uppercase;
+    @media screen and (max-width:1190px) {
+      padding-top: 20px;
+    }
+    @media screen and (max-width:767px) {
+      padding-top: 0px;
+    }
 }
 .main-nav__link {
     margin: 0 0 0 40px;
@@ -87,8 +158,16 @@
   color: $second-text-color;
   font-size: 24px;
   font-weight: 600;
+  transition: font-size 500ms linear;
   &:first-child {
       margin: 0;
+  }
+  @media screen and (max-width:1190px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width:767px) {
+    font-size: 18px;
+    margin: 0 0 0 26px;
   }
 }
 .hero {
@@ -96,16 +175,39 @@
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1600px;
-    padding: 0 15px 65px 15px;
-    
+    padding: 0 45px 65px 45px;
+    @media screen and (max-width:1090px) {
+      background-image: url("../images/banner-new-2.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-top: 65px;
+    }
+    @media screen and (max-width:767px) {
+      background-image: url("../images/banner-new-2-1024x400.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    @media screen and (max-width:1024px) {
+      padding-top: 384px;
+    }
+    @media screen and (max-width:767px) {
+      max-width: 767px;
+    }
     
 }
 .hero__mane {
     display: flex;
     flex-direction: column;
     // padding: 0 15px;
-    margin-top: 190px;
+    margin-top: 125px;
     max-width: 515px;
+    @media screen and (min-width:1091px) and (max-width: 1599px) {
+      margin-top: 90px;
+      
+    }
+    @media screen and (max-width:767px) {
+      display: none;
+    }
     &>p {
         color: $accent-color;
         font-family: $sec-font;
@@ -129,11 +231,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width:1091px) and (max-width: 1599px) {
+      margin-top: 10px;
+    }
+    @media screen and (max-width:1190px) {
+      padding-top: 384px;
+    }
     &>img {
         margin-bottom: 25px;
         width: 325px;
     }
- 
+    @media screen and (max-width:1190px) {
+      padding: 40px 15px 50px;
+      margin-top: 0;
+    }
 }
 .form {
    font-size: 18px;
@@ -194,6 +305,10 @@
     &::placeholder {
       color: $primary-text-color;  
     } 
+    @media screen and (max-width: 1599px) {
+      height: 75px;
+      
+    }
 }
 .form-download {
     opacity: 0;

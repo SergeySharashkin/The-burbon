@@ -1,10 +1,10 @@
 .section {
   @extend %auto-margin;
-  padding: 0 15px
+  // padding: 0 15px
 }
 .rye-contain {
   @extend %auto-margin;
-  max-width: 1320px;
+  max-width: 1350px;
   padding: 0 15px;
   // display: flex;
   // flex-direction: column;
@@ -12,6 +12,15 @@
   // align-items: center;
   & > img {
     margin: 10px 0 20px 0;
+  }
+  
+  @media screen and (max-width: 1090px) {
+    // margin-top: 10px;
+    max-width: 1090px;
+  }
+  @media screen and (max-width: 767px) {
+    // margin-top: 10px;
+    max-width: 767px;
   }
 }
 .section__tittel-contain {
