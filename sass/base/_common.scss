@@ -48,4 +48,12 @@ ul {
 a {
   text-decoration: none;
   font-family: $prim-font;
+  width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 400ms;
 }
+button {
+  cursor: pointer;
+  transition: 400ms;
+  }

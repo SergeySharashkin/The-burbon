@@ -16,22 +16,17 @@
     content: "";
     background: url("../images/banner-repate.png") 0 0 repeat-x;
     // z-index: 9;
-}
-@media screen and (max-width:1090px) {
-  background: none;
-  background-color: #000000;
-}
+  }
+  @media screen and (max-width: 1090px) {
+    background: none;
+    background-color: #000000;
+  }
 }
 .header-contain {
   @extend %auto-margin;
-    background-image: linear-gradient(
-    to right,
-    #00000080,
-    #00000080
-  );
-  @media screen and (max-width:1190px) {
+  background-image: linear-gradient(to right, #00000080, #00000080);
+  @media screen and (max-width: 1190px) {
     background-color: transparent;
-  
   }
 }
 .page-header {
@@ -42,16 +37,15 @@
   align-items: flex-start;
   max-width: 1600px;
   position: relative;
-  @media screen and (max-width:1090px) {
+  @media screen and (max-width: 1090px) {
     padding: 15px;
   }
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 190px 0 23px;
   }
-  
 }
 .contacts-list {
   display: flex;
@@ -61,14 +55,14 @@
   font-weight: 400;
   line-height: 1.5;
   transition: font-size 500ms linear;
-  @media screen and (max-width:1190px) {
+  @media screen and (max-width: 1190px) {
     flex-direction: column;
     font-size: 20px;
   }
-  @media screen and (max-width:1090px) {
+  @media screen and (max-width: 1090px) {
     font-size: 19px;
   }
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
@@ -77,42 +71,42 @@
 .contacts-item {
   &:not(:first-child) {
     margin-left: 10px;
-    @media screen and (max-width:1190px) {
+    @media screen and (max-width: 1190px) {
       margin: 0;
-    }}
-    
+    }
+  }
+
   & > a {
     color: $second-text-color;
     font-size: 24px;
     font-weight: 400;
     transition: font-size 500ms linear;
-    @media screen and (max-width:1090px) {
+    @media screen and (max-width: 1090px) {
       font-size: 19px;
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
       font-size: 20px;
     }
   }
 }
 .header-img-contain {
-  display:inline-block;
+  display: inline-block;
   position: absolute;
-  left: calc((100% - 228px)/2);
+  left: calc((100% - 228px) / 2);
   top: 15px;
   min-width: 228px;
-  @media screen and (max-width:1090px) {
+  @media screen and (max-width: 1090px) {
     min-width: 152px;
     position: relative;
     left: 0;
-  top: 0;
+    top: 0;
   }
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     min-width: 228px;
     position: absolute;
-    left: calc((100% - 228px)/2);
+    left: calc((100% - 228px) / 2);
     top: 15px;
   }
-  
 }
 // .header-img-link {
 //   position: absolute;
@@ -128,31 +122,31 @@
 //     left: calc((100% - 228px)/2);
 //     top: 15px;
 //   }
-  
+
 // }
 .header-img {
   width: 228px;
   padding: 0;
   margin: 0;
   display: inline-block;
-  @media screen and (max-width:1090px) {
+  @media screen and (max-width: 1090px) {
     width: 152px;
   }
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     width: 228px;
   }
 }
 .main-nav {
-    text-transform: uppercase;
-    @media screen and (max-width:1190px) {
-      padding-top: 20px;
-    }
-    @media screen and (max-width:767px) {
-      padding-top: 0px;
-    }
+  text-transform: uppercase;
+  @media screen and (max-width: 1190px) {
+    padding-top: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 0px;
+  }
 }
 .main-nav__link {
-    margin: 0 0 0 40px;
+  margin: 0 0 0 40px;
   display: inline-block;
   vertical-align: top;
   color: $second-text-color;
@@ -160,210 +154,217 @@
   font-weight: 600;
   transition: font-size 500ms linear;
   &:first-child {
-      margin: 0;
+    margin: 0;
   }
-  @media screen and (max-width:1190px) {
+  @media screen and (max-width: 1190px) {
     font-size: 20px;
   }
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     font-size: 18px;
     margin: 0 0 0 26px;
   }
 }
 .hero {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1600px;
-    padding: 0 45px 65px 45px;
-    @media screen and (max-width:1090px) {
-      background-image: url("../images/banner-new-2.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      padding-top: 65px;
-    }
-    @media screen and (max-width:767px) {
-      background-image: url("../images/banner-new-2-1024x400.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-    @media screen and (max-width:1024px) {
-      padding-top: 384px;
-    }
-    @media screen and (max-width:767px) {
-      max-width: 767px;
-    }
-    
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 45px 65px 45px;
+  @media screen and (max-width: 1090px) {
+    background-image: url("../images/banner-new-2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 65px;
+  }
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/banner-new-2-1024x400.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 1024px) {
+    padding-top: 384px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+  }
 }
 .hero__mane {
-    display: flex;
-    flex-direction: column;
-    // padding: 0 15px;
-    margin-top: 125px;
-    max-width: 515px;
-    @media screen and (min-width:1091px) and (max-width: 1599px) {
-      margin-top: 90px;
-      
+  display: flex;
+  flex-direction: column;
+  // padding: 0 15px;
+  margin-top: 125px;
+  max-width: 515px;
+  @media screen and (min-width: 1091px) and (max-width: 1599px) {
+    margin-top: 90px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  & > p {
+    color: $accent-color;
+    font-family: $sec-font;
+    font-size: 33px;
+    margin: 10px 0 25px;
+  }
+  & > button {
+    color: $hero-text-color;
+    width: 222px;
+    height: 60px;
+    font-weight: 600;
+    background: none;
+    border: 2px solid $hero-text-color;
+    font-size: 22px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: gray;
+      // opacity: 0.1;
     }
-    @media screen and (max-width:767px) {
-      display: none;
+    &:focus {
+      background-color: gray;
     }
-    &>p {
-        color: $accent-color;
-        font-family: $sec-font;
-        font-size: 33px;
-        margin: 10px 0 25px;
-    }
-    &>button {
-        color: $hero-text-color;
-        width: 222px;
-        height: 60px;
-        font-weight: 600;
-        background: none;
-        border: 2px solid $hero-text-color;
-        font-size: 22px;
-        text-transform: uppercase;
-    }
+  }
+}
+.hero-tittel {
+  font-family: $tre-font;
+  font-size: 47px;
+  margin-bottom: 25px;
+  color: $hero-text-color;
+  opacity: 0.95;
 }
 .form-contain {
-    margin-top: 105px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media screen and (min-width:1091px) and (max-width: 1599px) {
-      margin-top: 10px;
-    }
-    @media screen and (max-width:1190px) {
-      padding-top: 384px;
-    }
-    &>img {
-        margin-bottom: 25px;
-        width: 325px;
-    }
-    @media screen and (max-width:1190px) {
-      padding: 40px 15px 50px;
-      margin-top: 0;
-    }
+  margin-top: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1091px) and (max-width: 1599px) {
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 1190px) {
+    padding-top: 384px;
+  }
+
+  @media screen and (max-width: 1190px) {
+    padding: 40px 15px 50px;
+    margin-top: 0;
+  }
 }
 .form {
-   font-size: 18px;
-   
-    display: flex;
-    flex-wrap: wrap;
-    width: 480px;
-    justify-content: space-between;
-    &>p {
-        color: $hero-text-color;
-        margin: 20px auto 15px;
-        font-size: 22px;
-        display: flexbox;
-    }
+  font-size: 18px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  justify-content: space-between;
+  & > p {
+    color: $hero-text-color;
+    margin: 20px auto 15px;
+    font-size: 22px;
+    display: flexbox;
+  }
 }
 .form-name {
-    text-transform: uppercase;
-    font-weight: 600;
-    // width: 225px;
-    width: calc(50% - 15px);
-    height: 45px;
-    border: none;
-    padding-left: 10px;
-    &::placeholder {
-      color: $primary-text-color;  
-    } 
+  text-transform: uppercase;
+  font-weight: 600;
+  // width: 225px;
+  width: calc(50% - 15px);
+  height: 45px;
+  border: none;
+  padding-left: 10px;
+  &::placeholder {
+    color: $primary-text-color;
+  }
 }
 .form-phone {
-    text-transform: uppercase;
-    font-weight: 600;
-    width: calc(50% - 15px);
-    height: 45px;
-    border: none;
-    padding-left: 10px;
-    &::placeholder {
-      color: $primary-text-color;  
-    } 
+  text-transform: uppercase;
+  font-weight: 600;
+  width: calc(50% - 15px);
+  height: 45px;
+  border: none;
+  padding-left: 10px;
+  &::placeholder {
+    color: $primary-text-color;
+  }
 }
 .form-mail {
-    text-transform: uppercase;
-    font-weight: 600;
-    width: 100%;
-    height: 45px;
-    margin: 8px 0;
-    border: none;
-    padding-left: 10px;
-    &::placeholder {
-      color: $primary-text-color;  
-    } 
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  height: 45px;
+  margin: 8px 0;
+  border: none;
+  padding-left: 10px;
+  &::placeholder {
+    color: $primary-text-color;
+  }
 }
 .form-message {
-    text-transform: uppercase;
-    font-weight: 600;
-    width: 100%;
-    height: 150px;
-    border: none;
-    padding-left: 10px;
-    &::placeholder {
-      color: $primary-text-color;  
-    } 
-    @media screen and (max-width: 1599px) {
-      height: 75px;
-      
-    }
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  height: 150px;
+  border: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  &::placeholder {
+    color: $primary-text-color;
+  }
+  @media screen and (max-width: 1599px) {
+    height: 75px;
+  }
 }
 .form-download {
-    opacity: 0;
+  opacity: 0;
   visibility: hidden;
   position: absolute;
   width: 100%;
-    height: 62px;
-    
-    
+  height: 62px;
 }
 .input-file__contain {
-    width: 100%;
-    position: relative;
-    // margin: 0 0 25px;
-    
-  }
+  width: 100%;
+  position: relative;
+  // margin: 0 0 25px;
+}
 .input-file__text {
-    
-    color: $hero-text-color;
-    
-    font-size: 23px;
-    font-family: sans-serif;
-    width: 100%;
-    height: 63px;
-    border-radius: 3px;
-    border: 2px dashed $hero-text-color;
-display: flex;
-justify-content: center;
-align-items: center;
-background: none;
-background-image: linear-gradient(
-    to right,
-    #00000042,
-    #00000042
-  );
-  transition: background-color 500ms ease-in-out;
+  color: $hero-text-color;
+
+  font-size: 23px;
+  font-family: sans-serif;
+  width: 100%;
+  height: 63px;
+  border-radius: 3px;
+  border: 2px dashed $hero-text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  background-image: linear-gradient(to right, #00000042, #00000042);
+  transition: 500ms;
   &:hover {
-      background-color: gray;
+    background-color: gray;
   }
   &:focus {
     background-color: gray;
-}
+  }
 }
 .form-button {
-    text-transform: uppercase;
-    color: $hero-text-color;
-        width: 222px;
-        height: 50px;
-        font-weight: 600;
-        background: none;
-        border: 2px solid $hero-text-color;
-        font-size: 22px;
+  text-transform: uppercase;
+  color: $hero-text-color;
+  width: 222px;
+  height: 50px;
+  font-weight: 600;
+  background: none;
+  border: 2px solid $hero-text-color;
+  font-size: 22px;
 
-        display: flex;
-justify-content: center;
-align-items: center;
-margin: 25px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 0 auto;
+  &:hover {
+    background-color: gray;
+  }
+  &:focus {
+    background-color: gray;
+  }
 }
