@@ -146,8 +146,8 @@ a {
 
 .header-img-link {
   position: absolute;
-  top: 0;
   left: calc((100% - 228px)/2);
+  top: 15px;
 }
 
 .header-img {
