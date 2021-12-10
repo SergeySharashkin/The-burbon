@@ -1,14 +1,58 @@
 .form-section {
-background-image: url("../image/footerbg.jpg");
-// width: 100%
-// background-color: black
+background-image: url('../images/footerbg.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+// background-position: center;
+
 }
 .form-section__contain {
     @extend %auto-margin;
 max-width: 750px;
 display: flex;
 flex-direction: column;
+justify-content: center;
+padding: 60px 0;
+&>a {
+    color: #FFFFFF;
+    font-size: 34px;
+    text-align: center;
+}
 }
 .section__tittel--form-section {
     color: white;
+    background: transparent;
+    margin-bottom: 35px;
+}
+.form--form-section {
+    @extend %auto-margin;
+    width: 730px;
+    margin-top: 30px;
+    padding: 15px;
+    &>.form-name {
+height: 47px;
+    }
+    &>.form-phone {
+        height: 47px;
+    }
+    
+    &>.form-mail {
+        height: 47px;
+        margin: 25px 0;
+    }
+    
+    &>.form-message {
+        height: 290px;
+    }
+    &>p {
+        margin: 25px auto;
+        
+    }
+    &>.form-button {
+        height: 60px;
+        margin-top: 40px;
+    }
+   
+}
+.input-file__contain--form-section {
+    height: 68px;
 }

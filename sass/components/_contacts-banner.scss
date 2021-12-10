@@ -1,9 +1,14 @@
 
 .contacts-banner{
 @extend %auto-margin;
-max-width: 1320px;
+max-width: 1350px;
 background-image: url('https://bourbonscotchbuyer.com/wp-content/uploads/2019/03/addingpicture.jpg');
-padding: 50px 0 50px 60px;
+
+}
+.contacts-banner__contain {
+    padding: 50px 0 50px 60px;
+    @extend %auto-margin;
+
 }
 .banner-text {
     max-width: 525px;

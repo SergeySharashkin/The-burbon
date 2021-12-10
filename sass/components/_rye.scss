@@ -1,9 +1,11 @@
 .section {
   @extend %auto-margin;
+  padding: 0 15px
 }
 .rye-contain {
   @extend %auto-margin;
   max-width: 1320px;
+  padding: 0 15px;
   // display: flex;
   // flex-direction: column;
   // justify-content: center;

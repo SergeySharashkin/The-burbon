@@ -1,55 +1,54 @@
 .bottel-slider {
-    @extend %auto-margin;
-    padding: 70px;
+  @extend %auto-margin;
+  padding: 70px;
 }
 .bottel-contain {
-    @extend %auto-margin;
-    padding: 80px 0 0;
-    text-align: center;
-    
+  @extend %auto-margin;
+  padding: 80px 0 0;
+  text-align: center;
 }
 .slider-body {
-    max-width: 1220px;
-    padding: 30px 0;
-    @extend %auto-margin;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1220px;
+  padding: 30px 0;
+  @extend %auto-margin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .slider-btn {
- padding: 10px 5px;
-    
-    min-width: 30px;
-    min-height: 60px;
-    cursor: pointer;
-    
-    border: none;
-    outline: none;
-    background: transparent;
-    z-index: 100;
-   display: flex;
-   &.btn-next {
-       transform: rotateY(180deg)
-   }
-   }
-   
+  padding: 10px 5px;
+
+  min-width: 30px;
+  min-height: 60px;
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 100;
+  display: flex;
+  &.btn-next {
+    transform: rotateY(180deg);
+  }
+}
+
 .bottel-list {
-    @extend %auto-margin;
-    display: flex;
-    overflow: hidden;
-    padding: 65px 0;
+  @extend %auto-margin;
+  display: flex;
+  align-items: baseline;
+  overflow: hidden;
+  padding: 65px 0;
 }
 .bottel-item {
-    flex: 0 0 20%;
-    max-width: 20%;
-    width: 238px;
-height: 380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px;
-    font-weight: 500;
-
+  flex: 0 0 20%;
+  max-width: 20%;
+  width: 238px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 500;
 }

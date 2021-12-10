@@ -56,7 +56,7 @@ a {
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.story, .story__contain, .section, .rye-contain, .bottel-slider, .bottel-contain, .slider-body, .bottel-list, .addingsec-contain, .scotch-contain, .contacts-banner, .rum-contain, .other_container, .form-section__contain {
+.header-hero, .header-contain, .page-header, .story, .story__contain, .section, .rye-contain, .bottel-slider, .bottel-contain, .slider-body, .bottel-list, .addingsec-contain, .scotch-contain, .contacts-banner, .contacts-banner__contain, .rum-contain, .other_container, .form-section__contain, .form--form-section, .footer-contain {
   margin-right: auto;
   margin-left: auto;
 }
@@ -68,9 +68,10 @@ a {
 }
 
 .header-hero {
-  margin: 0 auto;
   background-image: url("https://bourbonscotchbuyer.com/wp-content/uploads/2019/08/banner-new-2.jpg");
-  max-width: 1920px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 
@@ -90,24 +91,47 @@ a {
 }
 
 .page-header {
-  margin: 0 auto;
-  padding: 15px;
+  padding: 20px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1350px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 1600px;
+  position: relative;
 }
 
 .contacts-list {
-  display: inline-block;
-  vertical-align: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #a69c8d;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 1184px) {
+  .contacts-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contacts-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1184px) {
+  .contacts-item:not(:first-child) {
+    margin: 0;
+  }
 }
 
 .contacts-item > a {
@@ -118,16 +142,17 @@ a {
 
 .header-img-contain {
   min-width: 228px;
-  position: relative;
 }
 
 .header-img-link {
   position: absolute;
   top: 0;
+  left: calc((100% - 228px)/2);
 }
 
 .header-img {
   width: 228px;
+  top: 0;
 }
 
 .main-nav {
@@ -135,7 +160,7 @@ a {
 }
 
 .main-nav__link {
-  margin: 0 0 0 35px;
+  margin: 0 0 0 40px;
   display: inline-block;
   vertical-align: top;
   color: #a69c8d;
@@ -218,7 +243,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 480px;
+  width: 480px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -234,7 +259,7 @@ a {
 .form-name {
   text-transform: uppercase;
   font-weight: 600;
-  width: 225px;
+  width: calc(50% - 15px);
   height: 45px;
   border: none;
   padding-left: 10px;
@@ -259,7 +284,7 @@ a {
 .form-phone {
   text-transform: uppercase;
   font-weight: 600;
-  width: 225px;
+  width: calc(50% - 15px);
   height: 45px;
   border: none;
   padding-left: 10px;
@@ -284,7 +309,7 @@ a {
 .form-mail {
   text-transform: uppercase;
   font-weight: 600;
-  width: 480px;
+  width: 100%;
   height: 45px;
   margin: 8px 0;
   border: none;
@@ -310,7 +335,7 @@ a {
 .form-message {
   text-transform: uppercase;
   font-weight: 600;
-  width: 480px;
+  width: 100%;
   height: 150px;
   border: none;
   padding-left: 10px;
@@ -336,7 +361,7 @@ a {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  width: 476px;
+  width: 100%;
   height: 62px;
 }
 
@@ -349,7 +374,7 @@ a {
   color: #ffffff;
   font-size: 23px;
   font-family: sans-serif;
-  width: 476px;
+  width: 100%;
   height: 63px;
   border-radius: 3px;
   border: 2px dashed #ffffff;
@@ -363,11 +388,17 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00000050), to(#00000050));
-  background-image: linear-gradient(to right, #00000050, #00000050);
+  background-image: -webkit-gradient(linear, left top, right top, from(#00000042), to(#00000042));
+  background-image: linear-gradient(to right, #00000042, #00000042);
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
 }
 
 .input-file__text:hover {
+  background-color: gray;
+}
+
+.input-file__text:focus {
   background-color: gray;
 }
 
@@ -430,8 +461,13 @@ a {
   margin: 0;
 }
 
+.section {
+  padding: 0 15px;
+}
+
 .rye-contain {
   max-width: 1320px;
+  padding: 0 15px;
 }
 
 .rye-contain > img {
@@ -539,6 +575,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   overflow: hidden;
   padding: 65px 0;
 }
@@ -636,8 +675,11 @@ a {
 }
 
 .contacts-banner {
-  max-width: 1320px;
+  max-width: 1350px;
   background-image: url("https://bourbonscotchbuyer.com/wp-content/uploads/2019/03/addingpicture.jpg");
+}
+
+.contacts-banner__contain {
   padding: 50px 0 50px 60px;
 }
 
@@ -740,7 +782,9 @@ a {
 }
 
 .form-section {
-  background-image: url("../image/footerbg.jpg");
+  background-image: url("../images/footerbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form-section__contain {
@@ -752,9 +796,83 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0;
+}
+
+.form-section__contain > a {
+  color: #FFFFFF;
+  font-size: 34px;
+  text-align: center;
 }
 
 .section__tittel--form-section {
   color: white;
+  background: transparent;
+  margin-bottom: 35px;
+}
+
+.form--form-section {
+  width: 730px;
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.form--form-section > .form-name {
+  height: 47px;
+}
+
+.form--form-section > .form-phone {
+  height: 47px;
+}
+
+.form--form-section > .form-mail {
+  height: 47px;
+  margin: 25px 0;
+}
+
+.form--form-section > .form-message {
+  height: 290px;
+}
+
+.form--form-section > p {
+  margin: 25px auto;
+}
+
+.form--form-section > .form-button {
+  height: 60px;
+  margin-top: 40px;
+}
+
+.input-file__contain--form-section {
+  height: 68px;
+}
+
+.footer-section {
+  background-color: #877761;
+  padding: 30px 0;
+}
+
+.footer-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1350px;
+  padding: 0 15px;
+}
+
+.main-nav__link--footer {
+  color: white;
+  font-size: 23px;
+}
+
+.copyboxright {
+  color: white;
+  font-size: 24px;
 }
 /*# sourceMappingURL=main.css.map */
