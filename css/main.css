@@ -1273,23 +1273,29 @@ li.slick-slide {
 .contacts-banner {
   max-width: 1319px;
   background-image: url("https://bourbonscotchbuyer.com/wp-content/uploads/2019/03/addingpicture.jpg");
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 2.5vw 60px;
+  width: 100%;
+  height: 310px;
+  padding: 25px 0 0 50px;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1350px) {
   .contacts-banner {
-    max-width: 1090px;
-    padding: 2.5vw 30px 9vw 30px;
+    height: 23vw;
   }
 }
 
 @media screen and (max-width: 1090px) {
   .contacts-banner {
-    max-width: 950px;
-    padding: 3.5vw 30px 6vw 30px;
+    padding: 25px 0 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-banner {
+    padding: 15px 0 0 5px;
   }
 }
 
@@ -1326,6 +1332,12 @@ li.slick-slide {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .banner-text {
+    max-width: 220px;
+  }
+}
+
 .banner-tittel {
   font-size: 44px;
   line-height: 0.93;
@@ -1336,6 +1348,19 @@ li.slick-slide {
 @media screen and (max-width: 1090px) {
   .banner-tittel {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-tittel {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner-tittel {
+    font-size: 17px;
   }
 }
 
@@ -1351,6 +1376,12 @@ li.slick-slide {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .banner-link {
+    font-size: 21px;
+  }
+}
+
 .banner-link.banner-mail {
   font-size: 40px;
   font-weight: 400;
@@ -1360,6 +1391,18 @@ li.slick-slide {
 @media screen and (max-width: 1090px) {
   .banner-link.banner-mail {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-link.banner-mail {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .banner-link.banner-mail {
+    display: none;
   }
 }
 
@@ -1512,6 +1555,12 @@ li.slick-slide {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .form-section__contain > a {
+    font-size: 26px;
+  }
+}
+
 .form-section__contain > a:hover {
   opacity: 0.5;
 }
@@ -1564,6 +1613,7 @@ li.slick-slide {
 
 .form--form-section > p {
   margin: 25px auto;
+  text-align: center;
 }
 
 .form--form-section > .form-button {
