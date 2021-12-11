@@ -75,6 +75,7 @@
       margin: 0;
     }
   }
+ 
 
   & > a {
     color: $second-text-color;
@@ -86,6 +87,12 @@
     }
     @media screen and (max-width: 767px) {
       font-size: 20px;
+    }
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      color: white;
     }
   }
 }
@@ -156,6 +163,12 @@
   &:first-child {
     margin: 0;
   }
+  &:hover {
+    color: white;
+  }
+  &:focus {
+    color: white;
+  }
   @media screen and (max-width: 1190px) {
     font-size: 20px;
   }
@@ -216,11 +229,12 @@
     font-size: 22px;
     text-transform: uppercase;
     &:hover {
-      background-color: gray;
-      // opacity: 0.1;
+      background-color: white;
+    color: black;
     }
     &:focus {
-      background-color: gray;
+      background-color: white;
+    color: black;
     }
   }
 }
@@ -362,9 +376,11 @@
   align-items: center;
   margin: 25px auto 0 auto;
   &:hover {
-    background-color: gray;
+    background-color: white;
+    color: black;
   }
   &:focus {
-    background-color: gray;
+    background-color: white;
+    color: black;
   }
 }

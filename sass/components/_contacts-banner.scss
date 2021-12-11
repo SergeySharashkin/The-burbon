@@ -33,6 +33,11 @@ margin-bottom: 10px;
         font-weight: 400;
         line-height: 1.5;
     }
-
+    &:hover {
+        opacity: 0.5;
+      }
+      &:focus {
+        opacity: 0.5;
+      }
 }
  

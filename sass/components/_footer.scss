@@ -8,17 +8,29 @@
   @extend %auto-margin;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1350px;
   padding: 0 15px;
   
   
 }
+.main-nav--footer {
+  padding: 0;
+}
 .main-nav__link--footer {
  color: white;
  font-size: 23px;
+
+ &:hover {
+  color: black;
+}
+&:focus {
+  color: black;
+}
 }
 
 .copyboxright {
   color: white;
  font-size: 24px;
+ padding: 0;
 }
