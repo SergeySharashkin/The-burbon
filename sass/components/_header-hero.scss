@@ -4,8 +4,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // padding: 0 15px 0 15px;
-  // max-width: 1920px;
   position: relative;
   &::after {
     position: absolute;
@@ -45,6 +43,7 @@
     justify-content: center;
     align-items: center;
     padding: 190px 0 23px;
+    max-width: 767px;
   }
 }
 .contacts-list {
@@ -189,16 +188,22 @@
     background-repeat: no-repeat;
     padding-top: 65px;
   }
+  
+  @media screen and (max-width: 1024px) {
+    // padding-top: 384px; nen vtyzk
+    padding-top: 50vw;
+    justify-content: center;
+  }
   @media screen and (max-width: 767px) {
     background-image: url("../images/banner-new-2-1024x400.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-  }
-  @media screen and (max-width: 1024px) {
-    padding-top: 384px;
-  }
-  @media screen and (max-width: 767px) {
     max-width: 767px;
+    padding-top: 41vw;
+    // padding: 0 15px;
+  }
+  @media screen and (min-width: 480px) {
+    border-image: url('../images/banner-new-2-600x300.jpg');
   }
 }
 .hero__mane {
@@ -210,7 +215,7 @@
   @media screen and (min-width: 1091px) and (max-width: 1599px) {
     margin-top: 90px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
   & > p {
@@ -244,6 +249,9 @@
   margin-bottom: 25px;
   color: $hero-text-color;
   opacity: 0.95;
+  @media screen and (max-width: 400px) {
+    font-size: 40px;
+  }
 }
 .form-contain {
   margin-top: 105px;
@@ -262,6 +270,11 @@
     padding: 40px 15px 50px;
     margin-top: 0;
   }
+  @media screen and (max-width: 767px) {
+    // margin: 290px auto 0 auto;
+  margin: 0 auto;
+  padding: 0;
+  }
 }
 .form {
   font-size: 18px;
@@ -276,6 +289,11 @@
     font-size: 22px;
     display: flexbox;
   }
+  @media screen and (max-width:767px) {
+   width: 100%;
+            max-width: 750px;
+        
+  }
 }
 .form-name {
   text-transform: uppercase;
@@ -288,6 +306,10 @@
   &::placeholder {
     color: $primary-text-color;
   }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    
+  }
 }
 .form-phone {
   text-transform: uppercase;
@@ -299,6 +321,12 @@
   &::placeholder {
     color: $primary-text-color;
   }
+  
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 8px 0 0 0;
+  }
+
 }
 .form-mail {
   text-transform: uppercase;

@@ -34,11 +34,21 @@ padding: 60px 0;
     width: 730px;
     margin-top: 30px;
     padding: 15px;
+    @media screen and (max-width: 767px) {
+        max-width: 682px;
+        width: 100%;
+    }
     &>.form-name {
 height: 47px;
+
     }
     &>.form-phone {
         height: 47px;
+        // width: 100%;
+        @media screen and (max-width: 767px) {
+            margin-top: 25px;
+            
+        }
     }
     
     &>.form-mail {

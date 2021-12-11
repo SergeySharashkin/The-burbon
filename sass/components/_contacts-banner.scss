@@ -1,14 +1,36 @@
 
 .contacts-banner{
 @extend %auto-margin;
-max-width: 1320px;
+max-width: 1319px;
 background-image: url('https://bourbonscotchbuyer.com/wp-content/uploads/2019/03/addingpicture.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+// width: 100%;
+// height: auto;
+padding: 2.5vw 60px;
+@media screen and (max-width: 1090px) {
+    max-width: 1090px;
+    padding: 2.5vw 30px 9vw 30px ;
+}
+@media screen and (max-width: 1090px) {
+    max-width: 950px;
+    padding: 3.5vw 30px 6vw 30px ;
+}
+// padding: 0 15px;
 
 }
 .contacts-banner__contain {
-    padding: 50px 0 50px 60px;
+    // padding: 5vw 0 5vw 60px;
     @extend %auto-margin;
-
+    // @media screen and (max-width:1170px) {
+    //     padding: 40px 0 0 0px;
+    // }
+    // @media screen and (max-width:1090px) {
+    //     padding: 25px 0 10vw 50px;
+        display: inline-flex;
+    //     width: 100%;
+    // }
 }
 .banner-text {
     max-width: 525px;
@@ -17,21 +39,36 @@ background-image: url('https://bourbonscotchbuyer.com/wp-content/uploads/2019/03
     color: #dfbe65;
 font-weight: 700;
 text-align: center;
+@media screen and (min-width:1091px) and (max-width:1170px) {
+    transform: scale(0.9);
+}
+@media screen and (max-width:1090px) {
+    margin: 0;
+}
 }
 .banner-tittel {
 font-size: 44px;
 line-height: 0.93;
 text-transform: uppercase;
 margin-bottom: 10px;
+@media screen and (max-width:1090px) {
+   font-size: 25px;
+}
 }
 .banner-link {
     line-height: 1.03;
     font-size: 58px;
     color: $hero-text-color;
+    @media screen and (max-width:1090px) {
+        font-size: 44px;
+     }
     &.banner-mail {
         font-size: 40px;
         font-weight: 400;
         line-height: 1.5;
+        @media screen and (max-width:1090px) {
+            font-size: 30px;
+         }
     }
     &:hover {
         opacity: 0.5;

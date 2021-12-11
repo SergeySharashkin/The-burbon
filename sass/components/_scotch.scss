@@ -1,5 +1,7 @@
 .scotch {
-    padding: 50px 0 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    // padding: 0 15px 0 15px;
 }
 .scotch-contain {
     @extend %auto-margin;
@@ -8,6 +10,10 @@
         margin-top: 10px;
         max-width: 1140px;
       }
+      @media screen and (max-width: 1090px) {
+        margin-top: 10px;
+        max-width: 1090px;
+      }
 }
 
 .scotch-list {
@@ -15,6 +21,12 @@
     flex-wrap: wrap;
     margin: -10px;
     padding-top: 120px;
+    @media screen and (max-width: 767px) {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;  
+        padding-top: 30px;     
+      } 
     
 }
 .scotch-item {
@@ -24,9 +36,18 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 2 * 30px)/2);
+        &>img {
+            max-width: 120px;
+        }    
+      } 
     &>p {
         font-size: 28px;
     font-weight: 500;
     padding-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        font-size: 23px;        
+      } 
     }
 }
